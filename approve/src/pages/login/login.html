@@ -1,0 +1,25 @@
+<ion-header>
+    
+</ion-header>
+    
+    <ion-content padding>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div class="header-image">
+              <div class="image"></div>
+              <p class="register">登陆</p>
+            </div>
+        <ion-item>
+          <ion-input formControlName="userCode" placeholder="账号"></ion-input>
+          <P>请输入账号</P>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="password" type="password" placeholder="密码"></ion-input>
+          <P>请输入密码</P>
+        </ion-item>
+        <ion-item class="item-none">
+          <button ion-button block [disabled]="loginForm.invalid" class="register-button">登陆</button>
+        </ion-item>
+      </form>
+    </ion-content>
+    
+    

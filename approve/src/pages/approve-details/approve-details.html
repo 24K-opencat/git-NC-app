@@ -1,0 +1,106 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>单据详情</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-list>
+        <ion-card  class="details-border">
+            <div *ngFor="let item of details" class="detailsItem  detailsItemBottom clearfix">
+                <p class="detailsItem-left">{{item.title}}</p>
+                <p class="detailsItem-right">{{item.number}}</p>
+             </div>
+        </ion-card>
+        <ion-card class="details-border">
+           <div class="">
+               <div class="detailsItem detailsItemnone clearfix">
+                  <div class="detailsItem-left">明细(共3条)</div>
+                  <div class="detailsItem-right" id="details-event">报销明细</div>
+               </div>
+              <div id="details-content">
+                  <ion-list class="details-content-list clearfix">
+                      <div class="details-content-listItem">
+                         <ion-icon ios="ios-subway" md="md-subway"></ion-icon>
+                         <div>
+                             <p>交通  1次</p>
+                         </div>
+                      </div>
+                      <div class="details-content-listItem-right">
+                          <p>￥300.00</p>
+                          <ion-icon ios="ios-arrow-forward"  md="md-arrow-forward" class="arrow-right"></ion-icon>
+                      </div>
+                  </ion-list>
+                  <div class="details-box">
+                    <div class="details-box-left">
+                        <p>交通  1次</p>
+                    </div>
+                     <div class="details-box-right">
+                         <p>￥300.00</p>
+                     </div>
+                  </div>
+              </div>
+           </div>
+        </ion-card>
+        <ion-card class="details-border">
+            <div class="detailsItem clearfix">
+               <div class="detailsItem-left">附件</div>
+               <div class="detailsItem-right">电子发票</div>
+            </div>
+       </ion-card>
+       <ion-card class="details-border">
+           <div class="clearfix">
+               <div class="list-left">2018-11-16 14:00:00</div>
+              <div class="listItem listItem-first">
+                  <div class="listItemContent">
+                      <div class="listItemContent-date">财务复核</div>
+                      <div class="listItemContent-content">复核</div>
+                  </div>
+               </div>
+               <div class="list-right">待处理</div>
+           </div>
+           <div class="clearfix">
+              <div class="list-left">2018-11-16 14:00:00</div>
+              <div class="listItem">
+                  <div class="listItemContent">
+                      <div class="listItemContent-date">小李</div>
+                      <div class="listItemContent-content">审批同意</div>
+                  </div>
+              </div>
+              <div class="list-right">待处理</div>
+           </div>
+           <div>
+              <div class="list-left">2018-11-16 14:00:00</div>
+              <div class="listItem listItem-last">
+                  <div class="listItemContent">
+                      <div class="listItemContent-date">小丽</div>
+                      <div class="listItemContent-content">发起</div>
+                  </div>
+              </div>
+              <div class="list-right">提交</div>
+           </div>
+       </ion-card>
+    </ion-list>
+  </ion-content>
+  
+  <footer class="footer">
+        <a class="footer-button" (tap)="approveAgree()">同意审批</a>
+        <a class="footer-button">驳回重审</a>
+    </footer>
+    <!-- <ion-tabs>
+        <footer class="footer">
+              <a class="footer-button" (tap)="approveAgree()">同意审批</a>
+              <a class="footer-button">驳回重审</a>
+          </footer>
+    </ion-tabs> -->
+  <!-- <ion-tabs>
+        <ion-tab  [root]="approve" tabUrlPath="approve"  tabTitle="同意审批" (tap)="approveAgree()"></ion-tab>
+        <ion-tab tabTitle="驳回重审"></ion-tab>
+  </ion-tabs>  -->
+  
+  <!-- <page-approve-tabs></page-approve-tabs> -->
+   
+      

@@ -1,0 +1,27 @@
+page-approve {
+    .card-header-ios{padding: rem(12);}
+    .list-left{
+        float: left;
+        width:55%;
+    }
+    .segment-ios .segment-button{
+        height: rem(48);
+        line-height: rem(48);
+    }
+    .segment-ios .segment-button{
+        font-size: rem(22);
+    }
+    .segment-activated{
+        background-color:#488aff!important;    
+        color: #fff!important; 
+      }
+    .segment-md .segment-button{
+        font-size: rem(22)
+    }
+    .segment-ios .segment-button.segment-activated{
+        color: #fff;
+    }
+   .segment-ios .segment-button{
+        font-size:rem(22);
+    }
+}

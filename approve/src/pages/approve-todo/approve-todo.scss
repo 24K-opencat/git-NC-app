@@ -1,0 +1,41 @@
+page-approve-todo {
+    .card-ios{
+        border:1px solid #ddd;
+    }
+    .card-header-ios{
+        padding: rem(12);
+    }
+    .list-left{
+        float: left;
+        width:55%;
+    }
+    .list-right{
+        float: right;
+    }
+    .list-detail{
+        border-top: 1px solid #ddd;
+        margin:rem(10) 0;
+        padding-top:rem(6);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-content-ios{
+       padding: rem(12) rem(12) rem(8) rem(12)
+    }
+    .label-ios{
+        margin: 0;
+    }
+    .item-ios{
+        font-size: rem(20)
+    }
+    .label{
+        font-size: rem(20);
+    }
+    .listItemContent-date{
+        font-size: rem(20)
+    }
+    .list-ios{
+        margin: -1px 0 60px;
+    }
+}

@@ -1,0 +1,22 @@
+<!-- <ion-card *ngFor="let item of listArr" [navPush]="ApproveDetailsPage" [navParams]="{'id':item['id']}"> -->
+    <ion-card *ngFor="let item of listArr" (tap)="goDetails()">
+        <ion-card-content>
+            <ion-item class="clearfix" no-padding>
+                <div class="clearfix">
+                    <div class="list-left">
+                        <div>{{item.title}}</div>
+                        <div>{{item.number}}</div>
+                        </div>
+                        <div class="list-right">
+                            <div>{{item.name}}</div>
+                            <div>{{item.time}}</div>
+                        </div>
+                </div>
+                <div class="list-detail">
+                    <p>{{item.detail}}</p>
+                </div>
+                </ion-item>
+        </ion-card-content>
+    </ion-card>
+                
+    

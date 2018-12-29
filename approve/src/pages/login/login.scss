@@ -1,0 +1,69 @@
+page-login {
+    .register{
+      text-align: center;
+      margin-top: -70px;
+      font-size: 3rem;
+      color: #fff;
+    }
+    .register-button{
+      // background: #45CFFF;
+    }
+    .button-clear-ios{
+      color: #45CFFF;
+    }
+    .item-ios{
+      padding:rem(0) rem(25)
+    }
+    .item-ios .item-button{
+      height: 36px;
+      line-height: 36px;
+    }
+    .header-image {
+      margin-top: rem(30);
+      height: 12rem;
+      .image {
+        width: rem(100);
+        height: rem(100);
+        background: #488aff;
+        margin: 0 auto;
+        border-radius: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+      }
+    }
+
+    .item-ios.item-block .item-inner{
+      border-bottom:none!important;
+    }
+    .item-md .item-button{
+      height: 40px;
+    }
+    .button-ios{
+      height: 2.8em!important;
+    }
+    .button-inner{
+      font-size: rem(20)
+    }
+    .toolbar-title-ios{
+      font-size: rem(25)
+    }
+
+    .item-block .item-inner {
+      border-bottom:none!important;
+    }
+    .item-input ion-input{
+      border-bottom: 1px solid #ddd;
+      padding-left:rem(12)
+    }
+    .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+      border-bottom-color: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .item-block{
+      min-height: 3.4rem;
+    }
+  }
+  

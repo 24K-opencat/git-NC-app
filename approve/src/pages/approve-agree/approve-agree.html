@@ -1,0 +1,27 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>同意审批</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content padding>
+      <ion-list>
+          <ion-card class="details-border">
+              <div  class="detailsItem clearfix">
+                  <p class="detailsItem-left">费用报销明细</p>
+                  <p class="detailsItem-right">同意审批</p>
+               </div>
+               <div class="detailsItem clearfix">
+                  <p class="detailsItem-left">审批意见</p>
+                  <p class="detailsItem-right">请输入意见</p>
+               </div>
+          </ion-card>
+      </ion-list>
+      <footer class="footer">
+          <a class="footer-button" (tap)="approveAgreeAffirm()">同意审批</a>
+          <a class="footer-button">驳回重审</a>
+      </footer>
+  </ion-content>
+  

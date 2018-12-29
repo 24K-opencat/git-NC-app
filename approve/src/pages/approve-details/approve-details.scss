@@ -1,0 +1,149 @@
+page-approve-details {
+    .toolbar-title-ios{
+        font-size: rem(26)
+    }
+    .details-border{
+        border:1px solid #e5e5e5;
+        div:last-child{
+            border-bottom: none;
+        }
+    }
+    .detailsItem{
+        border-bottom:1px solid #ddd;
+        margin:rem(10); 
+    }
+    .detailsItemnone{
+        border-bottom:none;
+    }
+    .detailsItemBottom{
+        padding-bottom: rem(10);
+    }
+    .detailsItem-left{
+        float: left;
+        width: 55%;
+    }
+    .detailsItem-right{
+        float: right;
+    }
+    .tabbar{
+        z-index: 105;
+        opacity:1;
+    }
+    .card-ios p, .card-ios{
+        font-size: rem(20)
+    }
+    #details-content{
+        display: none;
+        margin: rem(10)
+    }
+    // 明细详情
+    .details-content-list,.details-content-listItem{
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .details-content-listItem-right{
+        display: flex;
+        float: right;
+    }
+    ion-icon{
+        font-size: rem(35);
+        padding: 0 1rem 0 0;
+    }
+    // 时间线
+    .list-left{
+        float: left;
+        width: 25%;
+        font-size: 1rem;
+        padding: 2rem 0rem 0rem 0.8rem;
+    }
+    .listItem {
+        position: relative;
+        padding-left: 30px;
+        padding-top: 4px;
+        float: left;
+    }
+    .listItem:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid #999;
+        left: 8px;
+        z-index: 1;
+    }
+    .listItem-first:before {
+        height: 50%;
+        top: 50%;
+    }
+    .listItemContent {
+        padding: 1.5rem 0.5rem 1rem 0.5rem;
+    }
+    .listItem:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: #999;
+        border-radius: 50%;
+        left: 2px;
+        top: 40%;
+        margin-top: -2px;
+        z-index: 1;
+    }
+    .listItem-last:before {
+        height: 50%;
+    }
+    .listItemContent-content{
+        font-size: rem(16);
+        color: #999;
+    }
+    .list-right{
+        float: right;
+        padding: 2rem 2rem 1rem 0.5rem;
+        font-size: rem(20)
+    }
+    .detailsItem p,.listItemContent-date,.detailsItem div{
+        font-size: rem(20);
+    }
+    // .list-ios{
+    //     margin: -1px 0 60px;
+    // }
+    .details-content-list{
+        border: 1px solid #ddd;
+        p{
+            font-size: rem(19)
+        }
+    }
+    .details-content-list{
+        padding: 0.6rem;
+    }
+    .details-box-left{
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        display: inline-block;
+    }
+    .details-box-right{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        float: right;
+    }
+    .details-box{
+        padding: rem(16) rem(8);
+        background: #e0e0e03d;
+    }
+    .arrow-right{
+        padding: 0 0 0 0.6rem;
+    }
+}

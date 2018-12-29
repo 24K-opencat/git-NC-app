@@ -1,0 +1,19 @@
+page-me {
+    .item-ios{
+        padding-right: 16px;
+    }
+    .list-ios > .item-block:last-child{
+        border-bottom: none;
+    }
+    .item-ios.item-block .item-inner{
+        border-bottom: 0.55px solid #c8c7cc!important;
+    }
+    .toolbar-title-ios{
+        font-size: rem(22)
+    }
+    .button-ios{
+        width: 92%;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}

@@ -1,0 +1,72 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@import '../assets/font/iconfont.css';
+* {
+  font-family: '苹方', 'San Francisco', 'Heiti SC', 'Helvetica', '微软雅黑';
+}
+pre {
+  white-space:pre-wrap;
+  word-wrap:break-word;
+  font-family: '苹方', 'San Francisco', 'Heiti SC', 'Helvetica', '微软雅黑';
+}
+ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+
+ion-popover.short .popover-content {
+  height: 200px;
+}
+ion-popover.tall .popover-content {
+  height: 400px;
+}
+ion-popover.mini .popover-arrow:after {
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 0;
+}
+ion-popover.mini .popover-content {
+  width: auto;
+  background-color: #000;
+  opacity: 0.8;
+}
+@media (max-width: 760px) {
+  ion-popover.small .popover-content {
+    width: 80%;
+    left: 10%!important;
+  }
+  ion-popover.large .popover-content {
+    width: 90%;
+    left: 5%!important;
+  }
+}
+@media (min-width: 760px) and (max-width: 1440px) {
+  ion-popover.small .popover-content {
+    width: 50%;
+    left: 25%!important;
+  }
+  ion-popover.large .popover-content {
+    width: 80%;
+    left: 10%!important;
+  }
+}
+
